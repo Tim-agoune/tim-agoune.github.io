@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Mise en place du tracking des sites du groupe : plan de marquage GTM reconstruit (29 balises), événements GA4 et tableaux de bord Looker Studio.">
+<link rel="icon" type="image/png" href="../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<title>Mise en place de tracking et suivi des données marketing — Tim Agoune</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="name" href="../index.html"><img src="../assets/img/favicon.png" alt="">Tim Agoune</a>
+    <ul>
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a class="active" href="../index.html#marketing">Marketing</a></li>
+      <li><a href="../index.html#commercial">Commercial</a></li>
+      <li><a href="../index.html#communication">Communication</a></li>
+      <li><a href="../parcours.html">Parcours</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="proj-head">
+    <div class="crumb"><a href="../index.html">Accueil</a> / <a href="../index.html#marketing">Marketing</a></div>
+    <div class="meta">Alternance · Expression Groupe · 2025–2026</div>
+    <h1>Mise en place de tracking et suivi des données marketing</h1>
+  </div>
+
+  <article class="trame">
+    <h2><span>01</span>Objectif</h2>
+    <p>Mettre en place le suivi des données des sites de l'entreprise afin de savoir d'où vient l'audience et ce qu'elle fait sur le site.</p>
+
+    <h2><span>02</span>Démarche</h2>
+    <p>Sur le site de Neurologies, j'ai repris entièrement le plan de marquage dans Google Tag Manager : la dernière mise à jour datait de plusieurs années et le conteneur ne comptait que <b>3 balises</b> devenues obsolètes. J'en ai implanté <b>29, avec 30 déclencheurs et 14 variables</b> : ajout au panier, tunnel d'achat, abonnements par profil, inscriptions newsletter, recherche interne. Chaque événement remonte ensuite dans GA4, où j'ai créé des rapports personnalisés et des tableaux de bord Looker Studio.</p>
+
+    <p>Ce suivi permet aujourd'hui de répondre à des questions précises : d'où vient l'audience, quelles pages retiennent les visiteurs, à quelle étape le tunnel d'achat perd des utilisateurs. Ces données servent de base aux décisions concernant les prochaines améliorations du site internet.</p>
+    <div class="fig-duo">
+      <figure class="figure">
+        <img src="../assets/missions/marketing/tracking/gtm-2020.webp" alt="Ancienne version du conteneur Google Tag Manager avec 3 balises Universal Analytics">
+        <figcaption>Avant : l'ancien conteneur GTM — 3 balises, 2 déclencheurs.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="../assets/missions/marketing/tracking/gtm-2025.webp" alt="Nouvelle version du conteneur Google Tag Manager avec 29 balises GA4 et description détaillée">
+        <figcaption>Après : ma version — 29 balises GA4, 30 déclencheurs, 14 variables, documentée balise par balise.</figcaption>
+      </figure>
+    </div>
+    <div class="fig-duo">
+      <figure class="figure">
+        <img src="../assets/missions/marketing/tracking/gtm-balises-ga4.webp" alt="Liste des balises d'événements GA4 configurées dans Google Tag Manager">
+        <figcaption>Les balises d'événements configurées dans Google Tag Manager (noms floutés par confidentialité).</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="../assets/missions/marketing/tracking/ga4-evenements.webp" alt="Rapport GA4 listant les événements collectés dont les événements personnalisés">
+        <figcaption>Le rapport des événements collectés dans GA4 (données floutées par confidentialité).</figcaption>
+      </figure>
+    </div>
+    <div class="fig-duo">
+      <figure class="figure">
+        <img src="../assets/missions/marketing/tracking/ga4-explorations.webp" alt="Explorations GA4 créées pour Neurologies : événements clés et entonnoirs de conversion">
+        <figcaption>Les explorations construites dans GA4 : événements clés, entonnoirs de conversion numérique et intégral.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="../assets/missions/marketing/tracking/looker-dashboard.webp" alt="Tableau de bord Looker Studio de suivi e-commerce construit sur les données GA4">
+        <figcaption>La restitution : un tableau de bord Looker Studio construit sur les données collectées (flouté par confidentialité).</figcaption>
+      </figure>
+    </div>
+    <figure class="figure">
+      <img src="../assets/missions/marketing/tracking/looker-rapport.webp" alt="Rapport Looker Studio détaillant les sessions et pages vues par source de trafic">
+      <figcaption>Second rapport Looker Studio : sessions et pages vues par source de trafic (flouté par confidentialité).</figcaption>
+    </figure>
+
+    <h2><span>03</span>Moyens et outils</h2>
+    <ul>
+      <li><b>Google Tag Manager</b> : plan de marquage, balises, déclencheurs, variables ;</li>
+      <li><b>Google Analytics 4</b> : explorations, comparaisons de périodes, événements clés ;</li>
+      <li><b>Looker Studio</b> pour les tableaux de bord ;</li>
+      <li><b>Google Search Console</b> : requêtes, CTR, positions.</li>
+    </ul>
+  </article>
+
+  <nav class="pager">
+    <a href="refonte.html">Projet précédent <b>Refonte UX &amp; UI design des sites de l'entreprise</b></a>
+    <a class="next" href="gestion-projets.html">Projet suivant <b>Gestion de projets digitaux</b></a>
+  </nav>
+
+</main>
+
+<footer class="site">
+  <div class="wrap inner">
+    <span class="f-meta">Tim Agoune · Marketing digital &amp; développement commercial · <a href="../contact.html">Contact</a></span>
+    <a class="cv" href="../assets/cv-tim-agoune.pdf" target="_blank">Télécharger le CV</a>
+  </div>
+</footer>
+
+</body>
+</html>
